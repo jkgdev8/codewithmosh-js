@@ -72,16 +72,83 @@
 
 
 
-function circleCreate(radius) {
-    return{
-        radius: radius,
-        draw(){
-            console.log("Practice again makes perfect");
-        }
+
+
+// Dynamic Nature of Objects
+// const circle = {
+//     // Property
+//     radius: 1
+// };
+// // you can dynamically add properties as well as methods(functions in an object)
+// circle.color = "yellow";
+// // Method
+// circle.draw = function(){
+// };
+
+// // you can also delete properties with the delete operator
+// // delete circle.color;
+// // delete circle.draw;
+
+// console.log(circle);
+
+
+
+
+
+
+// Constructor Property
+// TAKEAWAY: Every object has a constructor property and references the function that was used to create that object
+
+// Factory Function
+// function createCircle(radius) {
+//     return {
+        
+//         radius: radius,
+        
+//         draw() {
+//             console.log('draw');
+//         }
+//     };
+// }
+// const circle = createCircle(1);
+
+// // Constructor Function
+// function Circle(radius){
+//     this.radius = radius;
+//     this.draw = function() {
+//         console.log('draw');
+//     }
+// }
+
+// const another = new Circle(1);
+
+
+
+
+
+
+
+
+
+
+// Functions are Objects... function are basically objects
+function Circle(radius){
+    this.radius = radius;
+    this.draw = function() {
+        console.log('draw');
     }
 }
-const circle1 = circleCreate(1);
-console.log(circle1);
-console.log(circle1.draw());
+
+// Blues are properties, and purples are methods
+Circle.apply;
+Circle.arguments;
+
+const another = new Circle(1);
+
+
+
+
+
+
 
 
