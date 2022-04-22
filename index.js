@@ -191,23 +191,61 @@
 
 
 
-// Enumerating Properties of an Object
+// // Enumerating Properties of an Object
 
-const circle = {
-    radius: 1,
-    draw() {
-        console.log('draw'); 
-    }
-};
+// const circle = {
+//     radius: 1,
+//     draw() {
+//         console.log('draw'); 
+//     }
+// };
 
-// Simplest way to enumerate the properties in an object
-for (let key in circle)
-console.log(key, circle[key]);
+// // Simplest way to enumerate the properties in an object for in
+// for (let key in circle)
+// console.log(key, circle[key]);
 
 
-// for of loop can only be used by iterables like arrays and maps, this will throw an error
-// for (let key of circle)
-// console.log(key);
+// // for of loop can only be used by iterables like arrays and maps, this will throw an error
+// // for (let key of circle)
+// // console.log(key);
+ 
+
+
+
+
+
+
+
+
+
+
+// // Cloning an Object
+// const circle = {
+//     radius: 1,
+//     draw() {
+//         console.log('draw'); 
+//     }
+// };
+
+// // clonding an object to a new empty object
+// // const another = {};
+// // for (let key in circle)
+// // another[key] = circle[key];
+
+
+// // This version is much cleaner and updated, the circle object will be cloned into a empty object by assigning
+// // You can also add properties within the cloned object
+// // const another = Object.assign({
+// //     color: 'red'
+// // }, circle)
+// // const another = Object.assign({}, circle)
+
+// // Cleanest and most simplest way to clone an object is the ...Spread operator, as well as you can add more properties
+// const another = { ...circle, 
+//     // color: 'red'
+// }
+
+// console.log(another);
 
 
 
