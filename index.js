@@ -162,6 +162,66 @@
 
 
 // Value vs Reference Types
+// Primitievs are copied by their value
+// Objects are copied by their reference
+
+// let x = 10;
+// let y = x;
+// x = 20;
+
+// let x = {  //properties
+//             value: 10
+// };
+// // y will equal 10 due to, the object is not primarily stored in the variable, its stored somewhere else in memory
+// let y = x;
+// x.value = 20;
+
+// objects are copied by their reference
+// let obj = { value: 10 };
+// function increase(obj){
+//     obj.value++;
+
+// }
+
+// increase(obj);
+// console.log(obj);
+
+
+
+
+
+
+// Enumerating Properties of an Object
+
+const circle = {
+    radius: 1,
+    draw() {
+        console.log('draw'); 
+    }
+};
+
+// Simplest way to enumerate the properties in an object
+for (let key in circle)
+console.log(key, circle[key]);
+
+
+// for of loop can only be used by iterables like arrays and maps, this will throw an error
+// for (let key of circle)
+// console.log(key);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
