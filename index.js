@@ -131,19 +131,38 @@
 
 
 
-// Functions are Objects... function are basically objects
-function Circle(radius){
-    this.radius = radius;
-    this.draw = function() {
-        console.log('draw');
-    }
-}
+// // Functions are Objects... function are basically objects
+// function Circle(radius){
+//     this.radius = radius;
+//     this.draw = function() {
+//         console.log('draw');
+//     }
+// }
 
-// Blues are properties, and purples are methods
-Circle.apply;
-Circle.arguments;
+// // Blues are properties, and purples are methods
+// Circle.apply;
+// Circle.arguments;
 
-const another = new Circle(1);
+// // The argument empty object will refer to 'this' new const
+// Circle.call({},1);
+
+// // With multiple arguments, you pass them in as an array
+// Circle.apply({}, [1, 2, 3, 4] )
+
+
+// const another = new Circle(1);
+
+
+
+
+
+
+
+
+
+
+// Value vs Reference Types
+
 
 
 
