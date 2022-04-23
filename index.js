@@ -253,6 +253,28 @@
 
 
 
+// Garbage collection
+// Javascript engine has a garbage collector, its job is to find the variables and consts that are no longer in use and then dealocate the memory that wasw allocated to them earlier
+// let circle = {};
+// console.log(circle);
+
+
+
+
+
+
+
+
+
+// Built in Objects: MATH
+// Mozilla has alot of properties and methods used for math constants and functions
+
+
+
+
+
+
+
 
 
 
