@@ -268,6 +268,43 @@
 
 // Built in Objects: MATH
 // Mozilla has alot of properties and methods used for math constants and functions
+// ex 
+// function getRandomNum (min, max) {
+//     return Math.random() * (max-min) +min;
+// }
+
+// getRandomNum();
+
+// const number1 = getRandomNum(1, 10);
+
+// console.log(number1);
+
+
+
+
+
+
+
+
+
+
+
+// Built In Objects: STRING(Primitive Type)
+
+// String Primitive
+const message = 'This is my first message';
+
+// Property example is length
+message.length
+
+// Method example
+message.concat
+
+
+// String Object
+const another = new String('Hi');
+
+
 
 
 
