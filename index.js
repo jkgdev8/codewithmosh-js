@@ -289,21 +289,39 @@
 
 
 
-// Built In Objects: STRING(Primitive Type)
+// // Built In Objects: STRING(Primitive Type)
 
-// String Primitive
-const message = 'This is my first message';
+// // String Primitive
+// const message = " This is my\n first message ";
 
-// Property example is length
-message.length
+// // Index example it will show 'T'
+// message[0];
 
-// Method example
-message.concat
+// // Index example it will shot 'h'
+// message[0];
+
+// // includes example will result in true or false(METHOD), its also case sensitive
+// message.includes('my')
 
 
-// String Object
-const another = new String('Hi');
+// // Property example is length
+// message.length
 
+// // Method example
+// message.concat()
+
+
+// // String Object
+// const another = new String('Hi');
+
+// // Trim method
+// message.trim()
+
+// // Escape character, use the \ backslash to put quotes in a string
+// // new line for strings are \n
+
+
+// // Split is also popular
 
 
 
