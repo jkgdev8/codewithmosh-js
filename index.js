@@ -330,6 +330,53 @@
 
 
 
+// Template Litterals ``
+// const message = "This is my\n first message";
+
+
+// // Template literals you can also use placeholders such as dynamic variables with the ${}, these are called expressions
+// const name ='Julienne'
+// const another = 
+// `This is ${name} my
+// 'first' template message
+// how are you?
+// cool`;
+
+
+// console.log(message);
+// console.log(another);
+// // Best way is template literals when doing your own format, also its cleaner
+
+
+
+
+
+
+// Built in Object: DATE
+// Date() is a constructor function it will give you a preview of parameters
+// const now = new Date();
+// const date1 = new Date('May 11 2018 09:00');
+// const date2 = new Date(2022, 3, 25, 9);
+// console.log(date2);
+
+// // All these date objects have alot of get and set methods
+// now.getTime;
+// now.setDate;
+// now.getFullYear(2022);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
