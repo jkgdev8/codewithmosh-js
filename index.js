@@ -366,8 +366,37 @@
 
 
 
+// Exercise 1: Address Object
+// street, city, zip
+// My example...
+// const address = {
+//     street: "Jordan Ave",
+//     city: "Canoga Park",
+//     zipCode: 91303
+// };
+// function showAddress(address){
+//     return address;
 
+// }
 
+// // console.log(showAddress(address.street));
+// // console.log(showAddress(address.city));
+// // console.log(showAddress(address.zipCode));
+// console.log(address);
+
+// Mosh Example
+// let address = {
+//     street: 'Jordan Ave',
+//     city: 'Canoga Park',
+//     zipCode: 91303
+// };
+
+// function showAddress(address){
+//     for (let key in address)
+//     console.log(key, address[key]);
+// }
+
+// showAddress(address);
 
 
 
