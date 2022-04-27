@@ -411,12 +411,33 @@
 
 
 
+// Factory and Constructor Functions
+// Factory Function
+// function showAddress(street, city, zipCode){
+//     return{
+//         street: street,
+//         city: city,
+//         zipCode: zipCode
+//     }
+// }
+
+// const show = showAddress('Jordan Ave', 'Canoga Park', 91303);
+// console.log(show.street);
+// console.log(show.city);
+// console.log(show.zipCode);
 
 
+// Constructor Function
+// function Showaddress(street, city, zipCode){
+//     this.street = street;
+//     this.city = city;
+//     this.zipCode = zipCode
+// }
 
-
-
-
+// const show = new Showaddress('a', 'b', 91303);
+// console.log(show.street);
+// console.log(show.city);
+// console.log(show.zipCode);
 
 
 
