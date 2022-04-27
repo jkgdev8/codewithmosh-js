@@ -412,7 +412,7 @@
 
 
 // Factory and Constructor Functions
-// Factory Function
+// My Factory Function
 // function showAddress(street, city, zipCode){
 //     return{
 //         street: street,
@@ -427,7 +427,7 @@
 // console.log(show.zipCode);
 
 
-// Constructor Function
+// My Constructor Function
 // function Showaddress(street, city, zipCode){
 //     this.street = street;
 //     this.city = city;
@@ -438,6 +438,85 @@
 // console.log(show.street);
 // console.log(show.city);
 // console.log(show.zipCode);
+
+
+
+// Mosh Factory Function Example
+// let address = {
+//     street: 'Jordan Ave',
+//     city: 'Canoga Park',
+//     zipCode: 91303
+// }
+// let address = createAddress('Jordan Ave', 'Canoga Park', 91303)
+
+// function createAddress(street, city, zipCode){
+//     return{
+//         street: street,
+//         city: city,
+//         zipCode: zipCode
+//     };
+
+// }
+// console.log(address);
+
+
+// Mosh Constructor Function Example
+// let address = new Createaddress('Jordan Ave', 'Canoga Park', 91303)
+
+// function Createaddress(street, city, zipCode){
+//     this.street = street;
+//     this.city = city;
+//     this.zipCode = zipCode
+// }
+
+// console.log(address);
+
+
+
+
+
+
+
+
+// Exercise 3: Object Equality
+// Objects are copied by their reference rather than value
+// let address1 = new Createaddress('Jordan Ave', 'Canoga Park', 91303);
+// let address2 = new Createaddress('Jordan Ave', 'Canoga Park', 91303);
+
+// function Createaddress(street, city, zipCode){
+//     this.street = street;
+//     this.city = city;
+//     this.zipCode = zipCode
+// }
+
+
+// function areEqual(address1, address2){
+//    return address1.street === address2.street &&
+//     address1.city === address2.city &&
+//     address1.zipCode === address2.zipCode;
+   
+   
+   
+// };
+
+// function areSame(address1, address2){
+//     return address1 === address2
+
+// };
+
+// console.log(areEqual(address1, address2));
+// console.log(areSame(address1, address2));
+
+
+
+
+
+
+
+
+
+
+
 
 
 
