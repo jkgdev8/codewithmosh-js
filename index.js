@@ -519,6 +519,34 @@
 
 
 
+// // Exercise 4 Blog Post Object
+// const blogPost = {
+//     title: `Star Wars`,
+//     body: `Episode 1`,
+//     author: `George Lucas`,
+//     views: 1000,
+//     comments: [
+//         { author: `Lebron`, body: `Whats up`},
+//         { author: `Anthony`, body: `YO`}
+//     ],
+//     isLive: true
+// };
+
+// console.log(blogPost);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
