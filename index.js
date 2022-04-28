@@ -541,6 +541,63 @@
 
 
 
+// Exercise 5 - Constructor Functions
+// const blogPost = {
+//     title: `Star Wars`,
+//     body: `Episode 1`,
+//     author: `George Lucas`,
+//     views: 1000,
+//     comments: [
+//         { author: `Lebron`, body: `Whats up`},
+//         { author: `Anthony`, body: `YO`}
+//     ],
+//     isLive: true
+// }
+
+// let post = new Post('a', 'b', 'c')
+
+
+// function Post(title, body, author){
+//     this.title = title,
+//     this.body =  body,
+//     this.author = author,
+//     this.views = 0,
+//     this.comments = [];
+//     this.isLive = false
+
+
+// }
+
+// console.log(post);
+
+
+
+
+
+
+
+
+
+
+// Exercise 6 Price Range Object
+// let priceRanges = [
+//     { label: '$', tooltip: 'Inexpensive', minPerPerson: 0, maxPerPerson: 10 },
+//     { label: '$$', tooltip: 'Moderate', minPerPerson: 10, maxPerPerson: 20 },
+//     { label: '$$$', tooltip: 'Expensive', minPerPerson: 20, maxPerPerson: 30 },
+// ];
+
+// let restaurants = [
+//     {averageperPerson: 5}
+// ];
+
+// console.log(priceRanges);
+// console.log(restaurants);
+
+
+
+
+
+
 
 
 
