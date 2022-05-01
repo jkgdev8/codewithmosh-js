@@ -81,20 +81,102 @@
 // function greet(who) {
 //     return `Hi, ${who}`
 // }
-
 // console.log(greet('Julienne'));
 
 // const greeting = who => {
 //     return `Hi, ${who}`
 // }
-
 // console.log(greeting('Garcia'));
 
-const greet = (who, when, what) => {
-    return `Hi, ${who} ${when} ${what}`
+
+
+
+
+
+
+
+// Removing Elements
+// const numbers = [1, 2, 3, 4, 5]
+
+// // remove last element in an array and also return it
+// // const last = numbers.pop();
+
+
+// // // add begining of an array
+// // const first = numbers.shift();
+
+// // // // add in between middle an array SPLICE METHOD
+// const mid = numbers.splice(1, 3)
+// console.log(numbers);
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // Emptying an array
+// let numbers = [1, 2, 3, 4];
+// let another = numbers;
+
+
+// // solution 1... its good but wont work if theres another reference to the array
+// // numbers = [];
+
+// // solution 2... the preffered solution
+// // numbers.length = 0;
+
+
+
+// // solution 3... too noisy
+// // numbers.splice(0,numbers.length);
+
+// // solution 4... too noisy
+// // while (numbers.length > 0)
+// // numbers.pop();
+
+
+// console.log(another);
+// console.log(numbers);
+
+
+
+
+
+
+const greet = who =>{
+    return `Hi, friend ${who}`
 }
 
-console.log(greet('Julienne', 'Kristopher', 'Garcia'));
+console.log(greet('Julienne'));
+
+
+
+function greeting(who) {
+    return `Hi, friend ${who}`
+
+}
+console.log(greeting('Garcia'));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
