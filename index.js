@@ -141,7 +141,6 @@
 // // while (numbers.length > 0)
 // // numbers.pop();
 
-
 // console.log(another);
 // console.log(numbers);
 
@@ -150,19 +149,32 @@
 
 
 
-const greet = who =>{
-    return `Hi, friend ${who}`
-}
-
-console.log(greet('Julienne'));
 
 
 
-function greeting(who) {
-    return `Hi, friend ${who}`
 
-}
-console.log(greeting('Garcia'));
+// Combining and Slicing Arrays
+// const first = [1, 2, 3];
+// const second = [4, 5, 6];
+
+
+// // combine 2 arrays with concat method
+// const combined = first.concat(second);
+
+// // slice array for slice method
+// const slice = combined.slice(2)
+
+
+
+
+// console.log(combined);
+// console.log(slice);
+
+
+
+
+
+
 
 
 
