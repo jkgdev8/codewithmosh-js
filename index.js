@@ -178,6 +178,82 @@
 
 
 
+// Spread Operator
+// const first = [1, 2, 3];
+// const second = [4, 5, 6];
+
+
+// // spread operator ... adding the individual elements of the 1st and 2nd array
+// const combined = [...first, 'a', ...second, 'b'];
+
+// const copy = combined.slice();
+
+// const copy2 = [...combined];
+
+// console.log(combined);
+// console.log(copy);
+// console.log(copy2);
+
+
+
+
+
+// Iterating an Array
+// const numbers = [1, 2, 3];
+
+// for (let number of numbers)
+//     console.log(number);
+
+
+// // you can also iteratate the index with the forEach method   
+// numbers.forEach((number, index) => {
+//     console.log(number, index)
+// });    
+
+
+
+
+
+
+// Joining Arrays
+// const numbers = [1, 2, 3, 4];
+
+// const joined = numbers.join(',');
+// console.log(joined);
+
+
+// const message = 'This is my first message';
+// const parts = message.split(' ');
+// console.log(parts);
+
+
+// const combined = parts.join('-');
+
+// console.log(combined);
+
+const numbers = [1, 2, 3, 4];
+
+const join = numbers.join(',');
+
+console.log(join);
+
+const message = 'This is my first message';
+
+const parts = message.split('');
+
+console.log(parts);
+
+const combined = parts.join('');
+console.log(combined);
+
+
+
+
+
+
+
+
+
 
 
 
