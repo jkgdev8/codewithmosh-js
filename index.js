@@ -231,20 +231,6 @@
 
 // console.log(combined);
 
-const numbers = [1, 2, 3, 4];
-
-const join = numbers.join(',');
-
-console.log(join);
-
-const message = 'This is my first message';
-
-const parts = message.split('');
-
-console.log(parts);
-
-const combined = parts.join('');
-console.log(combined);
 
 
 
@@ -252,6 +238,42 @@ console.log(combined);
 
 
 
+// Sorting Arrays
+// const numbers = [2, 3, 1];
+
+// numbers.sort();
+
+// console.log(numbers);
+
+// numbers.reverse();
+
+// console.log(numbers);
+
+// const courses = [
+//     {
+//         id: 1,
+//         name: 'Node.js '
+//     },
+//     {
+//         id: 2,
+//         name: 'Javascript '
+//     },
+// ];
+
+// // To sort objects alphabetically use sort function method and pass in another function with 2 parameters
+// courses.sort(function(a, b) {
+//     // a < b => -1
+//     // a > b => 1
+//     // a ===b => 0
+//     // if it doesnt sort right double check the ascii table
+//     const  nameA = a.name.toUpperCase();
+//     const  nameB = b.name.toUpperCase();
+//     if (nameA < nameB) return -1;
+//     if (nameA > nameB) return 1;
+//     return 0;
+// });
+
+// console.log(courses);
 
 
 
@@ -260,6 +282,23 @@ console.log(combined);
 
 
 
+
+// Testing the elments of an array
+const numbers = [1, 2, 3, -1];
+
+// every() checks to see if every element in a given array matches the given criteria
+const allPostive = numbers.every(function(value){
+    return value >=0;
+});
+
+// some() checks to see if you have at least one element that matches the given criteria
+const atLeastOnePositive = numbers.some(function(value){
+    return value >=0;
+});
+
+console.log(allPostive);
+
+console.log(atLeastOnePositive);
 
 
 
