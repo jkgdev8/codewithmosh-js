@@ -284,21 +284,39 @@
 
 
 // Testing the elments of an array
-const numbers = [1, 2, 3, -1];
+// const numbers = [1, 2, 3, -1];
 
-// every() checks to see if every element in a given array matches the given criteria
-const allPostive = numbers.every(function(value){
-    return value >=0;
-});
+// // every() checks to see if every element in a given array matches the given criteria
+// const allPostive = numbers.every(function(value){
+//     return value >=0;
+// });
 
-// some() checks to see if you have at least one element that matches the given criteria
-const atLeastOnePositive = numbers.some(function(value){
-    return value >=0;
-});
+// // some() checks to see if you have at least one element that matches the given criteria
+// const atLeastOnePositive = numbers.some(function(value){
+//     return value >=0;
+// });
 
-console.log(allPostive);
+// console.log(allPostive);
 
-console.log(atLeastOnePositive);
+// console.log(atLeastOnePositive);
+
+
+
+
+
+
+
+// Filtering an array
+// const numbers = [1, 2, 3, 4, -1];
+
+// // you can use the arrow function since theres only 1 paramater and 1 expression
+// const filtered = numbers.filter(value => {
+//     return value >= 0
+// });
+
+    
+// console.log(filtered);
+
 
 
 
