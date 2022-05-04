@@ -328,36 +328,64 @@
 
 
 
-// mapping an array
-const numbers = [1, -1, 2, 3];
+// // mapping an array
+// const numbers = [1, -1, 2, 3];
 
-// const filtered = numbers.filter(n => n >= 0);
+// // const filtered = numbers.filter(n => n >= 0);
 
-// you can also chain it all together like this chain methods
-const item = numbers
-.filter(n => n >= 0)
-.map(n => ({value: n}))
-.filter(obj => obj.value > 1)
-.map(obj => obj.value);
+// // you can also chain it all together like this chain methods
+// const item = numbers
+// .filter(n => n >= 0)
+// .map(n => ({value: n}))
+// .filter(obj => obj.value > 1)
+// .map(obj => obj.value);
 
-console.log(item);
+// console.log(item);
 
-// we are mapping the array into html strings, we can map method to map each element in an array into something else
-// const html = '<ul>' + items.join('') + '</ul>';
-
-
-// when doing a callback funcion and were returning an object we need to put it a parenthesis
-// without parenthesis the engine will look at it as a code block rather than object
-// const items = filtered.map(n =>  ({value: n})  );
-// console.log(items);
-
-//vs
-// const items1 = filtered.map(n => {return {value:n};
-// });
-// console.log(items1);
+// // we are mapping the array into html strings, we can map method to map each element in an array into something else
+// // const html = '<ul>' + items.join('') + '</ul>';
 
 
+// // when doing a callback funcion and were returning an object we need to put it a parenthesis
+// // without parenthesis the engine will look at it as a code block rather than object
+// // const items = filtered.map(n =>  ({value: n})  );
+// // console.log(items);
 
+// //vs
+// // const items1 = filtered.map(n => {return {value:n};
+// // });
+// // console.log(items1);
+
+
+// my map method chain practice
+// const numbers = [1, 2, 3, 4];
+// const item = numbers.filter(n => n >=0).map(n => ({value: n}));
+// console.log(item);
+
+
+// function circle(radius){
+//     return{
+//         radius,
+//         draw(){
+//             console.log('This still works');
+//         }
+//     }
+// };
+
+// const circle1 = circle(1);
+// console.log(circle1.draw());
+
+
+const circle = (radius) =>{
+    return{
+        radius,
+        draw(){
+            console.log('still works');
+        }
+    }
+}
+
+console.log(circle(1).draw());
 
 
 
