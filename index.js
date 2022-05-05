@@ -376,17 +376,61 @@
 // console.log(circle1.draw());
 
 
-const circle = (radius) =>{
-    return{
-        radius,
-        draw(){
-            console.log('still works');
-        }
-    }
-}
 
-console.log(circle(1).draw());
 
+
+// // Reducing an Array
+// const numbers = [1, 2, 3, 4];
+
+// // older method
+// // let sum = 0;
+// // for (let n of numbers)
+// //  sum += n;
+// //  console.log(sum);
+
+// // method 1 with an initiator
+// // a = 0, c = 1 => a = 1
+// // a = 1, c = -1 => a = 0
+// // a = 0, c = 2 => a = 2
+// // a = 2, c = 3 => a = 5
+// // const sum = numbers.reduce((accumulator, currentValue) => {
+// //      return accumulator + currentValue;
+// // }, 0 )
+
+
+// // method 2 without the initiator, 1st element in array will be used as initial value
+// // a = 1, c = 2 => a = 3
+// // a = 3, c = 3 => a = 6
+// // a = 6, c = 4 => a = 10
+// const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue);
+//  console.log(sum);
+
+
+
+
+
+
+
+// // Exercise 1 - Array from Range
+// const numbers = arrayFromRange(1, 4);
+// console.log(numbers);
+
+// // Mosh method
+// function arrayFromRange(min, max) {
+//     const output =[];
+//     for(let i = min; i <= max; i++)
+//     output.push(i)
+//     return output;
+
+// }; 
+
+
+
+
+
+
+
+// Exercise 2 - Includes
 
 
 
