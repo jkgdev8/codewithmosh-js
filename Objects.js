@@ -227,7 +227,7 @@
 //     }
 // };
 
-// // clonding an object to a new empty object
+// // cloneing an object to a new empty object
 // // const another = {};
 // // for (let key in circle)
 // // another[key] = circle[key];

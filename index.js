@@ -430,20 +430,54 @@
 
 
 
-// Exercise 2 - Includes
-const numbers = [1, 2, 3, 4];
+// // Exercise 2 - Includes
+// const numbers = [1, 2, 3, 4];
 
-// Mosh Example
-console.log(numbers.includes(5));
+// // Mosh Example
+// console.log(numbers.includes(5));
 
-function inclues(array, searchElement){
-    for (let element of array)
-     if (element === searchElement)
-      return true;
-    return false;  
+// function inclues(array, searchElement){
+//     for (let element of array)
+//      if (element === searchElement)
+//       return true;
+//     return false;  
 
-}
+// }
 
+
+
+
+
+
+
+
+// Exercise 3 - Except
+// const numbers = [1, 2, 3, 4];
+
+// const output = except(numbers, [1]);
+
+// console.log(output);
+
+// // Mosh example
+// function except(array, excluded) {
+//    const output =[];
+//    for (let element of array)
+//     if(!excluded.includes(element))
+//      output.push(element);
+//      return output;
+// };
+
+// my parctice
+// const numbers = [1, 2, 3, 4];
+// function except(array, excludes){
+//     const output = [];
+//     for(let key of array)
+//      if(!excludes.includes(key))
+//       output.push(key)
+//       return output;
+// }
+// const output = except(numbers, [1]);
+// console.log(output);
 
 
 
