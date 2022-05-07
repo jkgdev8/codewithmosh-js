@@ -283,7 +283,7 @@
 
 
 
-// Testing the elments of an array
+// Testing the elements of an array
 // const numbers = [1, 2, 3, -1];
 
 // // every() checks to see if every element in a given array matches the given criteria
@@ -431,7 +431,18 @@
 
 
 // Exercise 2 - Includes
+const numbers = [1, 2, 3, 4];
 
+// Mosh Example
+console.log(numbers.includes(5));
+
+function inclues(array, searchElement){
+    for (let element of array)
+     if (element === searchElement)
+      return true;
+    return false;  
+
+}
 
 
 
