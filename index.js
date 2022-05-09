@@ -507,6 +507,97 @@
 
 
 
+// exercise 5 - count occurences
+// my method
+// const numbers = [1, 2, 3, 4];
+// const count = countOccurences(numbers, 1);
+// console.log(count);
+// function countOccurences(array, searchElement){
+//     const output = [...array];
+//     const element = output.reduce(searchElement, 1)
+// }
+
+
+// const numbers = [1, 2, 3, 4, 1];
+// const count = countOccurences(numbers, 1);
+// console.log(count);
+
+// function countOccurences(array, searchElement){
+//     // let count = 0;
+//     // for(let key of array)
+//     //   if (key === searchElement)
+//     //    count++;
+//     // return count;   
+
+//     //vs
+
+//     return array.reduce((accumulator, current) => {
+//         const occurence = (current === searchElement) ? 1 : 0;
+//         console.log(accumulator, current, searchElement);
+//         return accumulator + occurence
+
+//     }, 0);
+
+
+
+// }
+
+
+
+
+
+
+
+
+
+// Exercise 6 Get Max
+// my method
+// const numbers = [1, 2, 3, 4];
+
+// function getMax(output){
+// }
+// console.log(Math.max(...numbers));
+
+
+// Mosh method
+// const numbers = [1, 2, 3, 4];
+
+// const max = getMax(numbers);
+
+// console.log(max);
+
+
+// function getMax(array){
+//     if (array.length === 0) return undefined;
+
+//     // let max = array[0];
+//     // for (let i = 1; i < array.length; i++ )
+//     //  if(array[i] > max)
+//     //  max = array[i];
+    
+//     // return max;
+//     // //Vs
+
+//     // return array.reduce((accumulator, current) => {
+//     //     return (current > accumulator) ? current : accumulator;
+
+//     // });
+    
+//     // //Vs even cleaner...
+//     // takeaway, anytime you have an array of values, and you wanna get a single value as a result of iterating that array, use reduce method
+//     return array.reduce( (a,b) =>  (a > b) ? a : b);
+    
+// }
+
+
+
+
+
+
+
+
+
+
 
 
 
