@@ -70,20 +70,30 @@
 
 
 
-// Rest operator(DONT get confused for spread... operator, this is only for parameters)
+// // Rest operator(DONT get confused for spread... operator, this is only for parameters)
 
-// Rest parameter syntax allows a function to accept an indefinite number of arguments as an array, providing a way to represent
-// Spread syntax (...) allows an iterable such as an array expression or string to be expanded in places where zero or more arguments
-// function sum (...args) {
-//     return args.reduce((a, b) => a + b);
+// // Rest parameter syntax allows a function to accept an indefinite number of arguments as an array, providing a way to represent
+// // Spread syntax (...) allows an iterable such as an array expression or string to be expanded in places where zero or more arguments
+// // function sum (...args) {
+// //     return args.reduce((a, b) => a + b);
+// // }
+// // console.log(sum(1, 2, 3, 4, 5));
+
+// function sum (discount, ...prices) {
+//     const total = prices.reduce((a, b) => a + b);
+//     return total * (1 - discount);
 // }
-// console.log(sum(1, 2, 3, 4, 5));
 
-function sum (discount, ...prices) {
-    const total = prices.reduce((a, b) => a + b);
-    return total * (1 - discount);
+// console.log(sum(0.1, 20, 30, 1));
+
+
+
+
+
+// Default Parameters = ES6
+function intrest(principal, rate = 3.5, years = 5){
+    return principal * rate / 100 * years;
 }
-
-console.log(sum(0.1, 20, 30, 1));
+console.log(intrest(10000));
 
 
