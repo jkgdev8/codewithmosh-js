@@ -90,10 +90,40 @@
 
 
 
-// Default Parameters = ES6
-function intrest(principal, rate = 3.5, years = 5){
-    return principal * rate / 100 * years;
-}
-console.log(intrest(10000));
+// // Default Parameters = ES6
+// function intrest(principal, rate = 3.5, years = 5){
+//     return principal * rate / 100 * years;
+// }
+// console.log(intrest(10000));
+
+
+
+
+
+
+// Getters and Setters
+
+// getters => access properties
+// setters => change (mutate) them
+
+const person = {
+    firstName: 'Julienne',
+    lastName: 'Garcia',
+
+    get fullName(){
+        return `${person.firstName} ${person.lastName}`
+    },
+    
+    set fullName(value){
+        const parts = value.split(' ');
+        this.firstName = parts[0];
+        this.lastName = parts[1];
+
+    } 
+};
+
+person.fullName = 'J G'
+
+console.log(person);
 
 
