@@ -101,29 +101,97 @@
 
 
 
-// Getters and Setters
+// // Getters and Setters
 
 // getters => access properties
 // setters => change (mutate) them
 
-const person = {
-    firstName: 'Julienne',
-    lastName: 'Garcia',
+// const person = {
+//     firstName: 'Julienne',
+//     lastName: 'Garcia',
 
-    get fullName(){
-        return `${person.firstName} ${person.lastName}`
-    },
-    
-    set fullName(value){
-        const parts = value.split(' ');
-        this.firstName = parts[0];
-        this.lastName = parts[1];
+//     get fullName(){
+//         return `${person.firstName} ${person.lastName}`
+//     },
 
-    } 
-};
+//     set fullName(value){
+//         const parts = value.split(' ');
+//         this.firstName = parts[0];
+//         this.lastName = parts[1];
 
-person.fullName = 'J G'
+//     } 
+// };
 
-console.log(person);
+// person.fullName = 'Julienne Garcia'
+
+// console.log(person);
+
+
+
+
+
+
+
+// // Try and Catch
+// const person = {
+//     firstName: 'Julienne',
+//     lastName: 'Garcia',
+
+//     set fullName(value){
+//         if(typeof value !== 'string') 
+//          throw new Error('Value is not a string!');
+
+//         // split method only used for strings
+//         const parts = value.split(' ');
+//         if (parts.length !== 2)
+//          throw new Error('Enter a first and last name!')
+//         this.firstName = parts[0];
+//         this.lastName = parts[1];
+
+//     } 
+// };
+
+// try {
+//     person.fullName = '';
+
+// }
+
+// catch (e){
+//     alert(e);
+// }
+
+// console.log(person);
+
+
+
+
+
+
+
+
+
+
+
+
+// // Local vs Global scrope
+// // best practice try not to declare globally. Toothbrush analogy
+// const color = 'red';
+
+// function start() {
+//     const message = 'hi';
+//     const color = 'blue';
+//     console.log(message);
+//     console.log(color);
+// }
+
+// function stop(){
+//     const message = 'bye'
+//     console.log(message);
+//     console.log(color);
+// }
+
+// start();
+
+// stop();
 
 
