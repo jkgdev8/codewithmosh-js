@@ -195,3 +195,79 @@
 // stop();
 
 
+
+
+
+
+
+
+// Let vs Var
+// Var => function scoped
+// ES6 let => block-scoped
+
+// Var global variable will attach it to the window object in browser
+// Not good if ur using 3rd party libraries, as this global variable can overide it
+// var color = 'red';
+
+// // let
+// let age = 30;
+
+// function sayHi(){
+//     console.log('hi');
+// }
+
+
+
+
+
+
+// // This Keyword
+// // The object that is executing the current function
+// // Method -> obj
+// // Function -> global (window, global)
+
+// const video = {
+//     title: 'a',
+//     tags: ['a', 'b', 'c', 'd'],
+//     showTags(){
+//         // function will reference the gloabl object window
+//         this.tags.forEach(function(tag){
+//             console.log(this.title, tag);
+//         },this);
+//     }
+// };
+
+// video.showTags();
+
+
+
+
+
+// // video.stop = function(){
+// //     console.log(this);
+// // };
+
+// // constructor function, this by default represents the global object
+// // function Video(title){
+// //     this.this = title;
+// //     console.log(this);
+
+// // }
+
+// // // {} calling a function with the new operator, this will reference the new empty object not on the window
+// // const v = new Video('b'); 
+
+
+
+
+
+
+
+
+
+
+
+// Changing This
+
+
+
