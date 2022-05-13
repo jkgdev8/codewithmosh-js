@@ -329,17 +329,77 @@
 
 
 
-// Exercise 2 - Area of Circle
+// // Exercise 2 - Area of Circle
 
-const circle = {
-    radius: 1,
-    get area(){
-        return Math.PI * this.radius * this.radius;
-    }
+// const circle = {
+//     radius: 1,
+//     // getter makes it a read only property
+//     get area(){
+//         return Math.PI * this.radius * this.radius;
+//     }
+// }
+
+// console.log(circle.area);
+
+
+
+
+
+// Exercise 3 - Error Handling
+
+// // My method
+// function countOccurences(array, searchElement){
+
+
+//     return array.reduce((accumulator, current) => {
+//         const occurence = (current === searchElement) ? 1 : 0;
+//         console.log(accumulator, current, searchElement);
+//         return accumulator + occurence
+
+//     }, 0);
+ 
+
+
+// }
+// try {
+//     const numbers = [1, 2, 3, 4, 1];
+// const count = countOccurences(numbers, 1);
+// console.log(count);
+    
+    
+// }
+
+// catch (e){
+//     alert(e);
+// }
+
+
+// Mosh Method
+try{
+    const numbers = [1, 2, 3, 4, 1];
+    const count = countOccurences(numbers, 1);
+    console.log(count);
+} 
+
+catch(e){
+    console.log(e.message);
 }
 
-console.log(circle.area);
 
+function countOccurences(array, searchElement){
+    if (Array.isArray(array))
+     throw new Error('Invalid array.');
+
+    return array.reduce((accumulator, current) => {
+        const occurence = (current === searchElement) ? 1 : 0;
+        console.log(accumulator, current, searchElement);
+        return accumulator + occurence
+
+    }, 0);
+
+
+
+}
 
 
 
