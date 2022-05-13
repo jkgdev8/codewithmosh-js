@@ -302,27 +302,43 @@
 
 
 
-// Exercise 1 - Sum Of Arguments
-// sum(1, 2, 3, 4) =>10
-// My method
-// function sum(a, b, c, d){
+// // Exercise 1 - Sum Of Arguments
+// // sum(1, 2, 3, 4) =>10
+// // My method
+// // function sum(a, b, c, d){
     
-//     return a+b+c+d;
+// //     return a+b+c+d;
+// // }
+// // console.log(sum(1, 2, 3, 4));
+// // console.log(Array);
+
+
+// //Mosh Method
+// function sum(...items){
+//     if (items.length === 1 && Array.isArray(items[0]))
+//      items = [...items[0]];
+    
+//     return items.reduce((a, b) => a + b); 
 // }
+
 // console.log(sum(1, 2, 3, 4));
-// console.log(Array);
 
 
-//Mosh Method
-function sum(...items){
-    if (items.length === 1 && Array.isArray(items[0]))
-     items = [...items[0]];
-    
-    return items.reduce((a, b) => a + b); 
+
+
+
+
+
+// Exercise 2 - Area of Circle
+
+const circle = {
+    radius: 1,
+    get area(){
+        return Math.PI * this.radius * this.radius;
+    }
 }
 
-console.log(sum(1, 2, 3, 4));
-
+console.log(circle.area);
 
 
 
